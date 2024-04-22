@@ -5,7 +5,7 @@ import LoginPanel from "./components/Login/LoginPanel";
 import MainPanel from "./components/Main/MainPanel";
 
 function App() {
-  const isLogged = useSelector((state) => state.ui.login);
+  const isLogged = useSelector((state) => state.auth.isLogged);
 
   return <>{isLogged ? <MainPanel /> : <LoginPanel />}</>;
 }
